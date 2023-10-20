@@ -1,0 +1,38 @@
+/* B (a)- target the anchor tag a change the color*/
+nav a{
+    color:rgb(252, 22, 6);
+}
+/* B (b)- Target only the first <h2> and change background color */
+nav > h2{
+    background-color: rgb(253, 12, 12);
+    color:white;
+}
+/* B (c)- Target first p tag and change the text color to red */
+nav p:first-child{
+    color:rgb(245, 6, 6);
+}
+/* C (a)- target the anchor tag with attribute "href"and change color to red and remove the text underline */
+a[href]{
+    color:red;
+    text-decoration:none;
+}
+/* C (b) Target the ancohor tag with the attribute of class name 'active'
+change the text color, and provide the text style properties with underline*/
+a[class="active"]{
+    color:rgb(0, 221, 255);
+    text-decoration: underline;
+}
+/* C (c)- Target the anchor tag with the attribute of class targate whose,
+   change the text color, and provide the text style value is "_self" and change the background color. */
+   a[target="_self"] {
+    background-color: rgb(128, 128, 128);
+   } 
+   /* D (a) target the last <p> tag and add "..."after its value */
+   p:last-child::after{
+    content: "...";
+}
+/* D(2)- Among the three p tag target the 2nd p tag. select the first letter of the secongd p tag and change the color red also increase the font size to 30px */
+  p:nth-child(odd)::first-letter{
+ color: red;
+    font-size: 30px;
+  }

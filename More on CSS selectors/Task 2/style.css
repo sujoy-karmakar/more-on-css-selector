@@ -1,0 +1,15 @@
+/* remove list style type bullet points and text underlining of the menu list items */
+ul li{
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+}
+/* target the child combinator to display the menu list item inline */
+ul > li{
+    display: inline;
+}
+/* margin between the menu list items. */
+li+li{
+    margin: 20px;
+}
